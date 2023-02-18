@@ -13,7 +13,7 @@ describe('factorial', () => {
   })
   it('false', () => {
     cy.visit('https://qa.putraprima.id/')
-    cy.get('input[name=input]').type(faker.random.numeric(3))
+    cy.get('input[name=input]').type(faker.random.numeric(4))
     cy.contains('Hitung Faktorial').click()
   })
 })
